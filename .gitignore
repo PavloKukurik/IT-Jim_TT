@@ -1,3 +1,7 @@
 .gitignore
 
-dataset/
+Task_№1/dataset/
+
+venv/
+
+Task_№1/outputs/
