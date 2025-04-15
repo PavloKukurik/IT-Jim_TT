@@ -2,6 +2,9 @@
 
 _Pavlo Kukurik_
 
+[Git](https://github.com/PavloKukurik/IT-Jim_TT/tree/master)
+
+
 ## Task 1 — DL (MANDATORY)
 
 This repository contains my solution to the mandatory DL task from It-Jim's 2025 internship challenge. The goal was to build a binary classifier that can distinguish images with visible artifacts from those without, based on a dataset of AI-generated faces.

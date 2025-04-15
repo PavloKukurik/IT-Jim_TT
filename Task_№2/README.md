@@ -1,9 +1,13 @@
 # Task 3 — Audio-Based Playlist Clustering
 
+_Pavlo Kukurik_
+
+
 This repository contains my solution to Task 3 (optional) from It-Jim's 2025 internship challenge. The goal was to automatically cluster a set of music tracks into playlists based purely on audio similarity — without using metadata, tags or genre labels.
 
 ---
 
+[Git](https://github.com/PavloKukurik/IT-Jim_TT/tree/master)
 ## Problem Description
 
 Given a folder with music files, build a tool that clusters the songs into a set of playlists based on how they sound. The program must support two different approaches:
