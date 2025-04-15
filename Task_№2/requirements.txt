@@ -1,7 +1,10 @@
-tensorflow
+librosa
 numpy
-pandas
-matplotlib
-seaborn
 scikit-learn
-Pillow
+tqdm
+soundfile
+tensorflow
+tensorflow-hub
+librosa
+scikit-learn
+tqdm
