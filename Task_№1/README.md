@@ -41,6 +41,7 @@ artifact_classifier/
 
 ### Approach
 
+
 - Used MobileNetV2 with ImageNet weights as a feature extractor
 - Implemented two-phase training:
   1. Feature extractor frozen — only classification head trained
@@ -50,30 +51,15 @@ artifact_classifier/
   - Light augmentation (flip, rotation, brightness)
 - Focused on the micro F1 score as the main evaluation metric
 
-All core logic and results are available in the notebook.
-
 ---
 
 ### Results
 
 - Final model: `MobileNetV2` (fine-tuned)
 - **Micro F1 score**: 0.9056 (on validation split)
-
-Confusion matrix on validation:
-```
-              Pred 0   Pred 1
-True 0         14        13
-True 1         21       312
-```
-
 - **Average confidence on test predictions**: 0.799
 - This indicates that the model was generally confident in its predictions.
 
-To support this, a histogram of prediction confidences was plotted (see figure below). It shows a strong bias toward high-confidence outputs, especially for class 1 predictions.
-
-📊 Suggested visualizations to include:
-- Histogram of `confidence` values for all predictions
-- (Optional) Overlayed histograms or KDEs by predicted class (0 vs 1)
 
 ---
 
@@ -81,13 +67,11 @@ To support this, a histogram of prediction confidences was plotted (see figure b
 
 ### Install dependencies:
 ```bash
-pip install -r requirements.txt
+    pip install -r requirements.txt
 ```
 
 ### Run inference:
 ```bash
-python3 src/inference.py
+    python3 src/inference.py
 ```
-
-Predictions will be saved to `outputs/results/test_predictions.csv`.
 
